@@ -1,0 +1,626 @@
+/* Modernized UI Styles */
+:root {
+    --primary-color: #0598d5;
+    /* --text-color: #333; */
+    --text-color: #617592;
+    --background-color: #f9f9f9;
+    --card-bg: #ffffff;
+    --border-radius: 12px;
+    --shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    --font-primary: 'Roboto Condensed', 'Inter', 'Poppins', sans-serif;
+}
+
+
+body {
+    overflow: hidden;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-offset {
+    margin-top: 100px;
+}
+
+/* Increased margin to accommodate larger header */
+#map {
+    position: absolute;
+    top: 100px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+/* Adjusted top position */
+
+.zoom-top-opened-sidebar {
+    margin-top: 15px;
+}
+
+.zoom-top-collapsed {
+    margin-top: 45px;
+}
+
+.mini-submenu {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.46);
+    border: 1px solid rgba(0, 0, 0, 0.9);
+    border-radius: 4px;
+    padding: 9px;
+    width: 42px;
+    text-align: center;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.50);
+}
+
+.mini-submenu-left {
+    position: absolute;
+    top: 9em;
+    left: .5em;
+    z-index: 40;
+}
+
+.mini-submenu-right {
+    position: absolute;
+    top: 9em;
+    right: .5em;
+    z-index: 40;
+}
+
+#map {
+    z-index: 35;
+}
+
+.sidebar {
+    z-index: 45;
+}
+
+.main-row {
+    position: relative;
+    top: 0;
+}
+
+.mini-submenu:hover {
+    cursor: pointer;
+}
+
+.slide-submenu {
+    background: rgba(0, 0, 0, 0.45);
+    display: inline-block;
+    padding: 0 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Custom CSS to move zoom control to bottom right */
+.leaflet-bottom.leaflet-right {
+    top: auto;
+    bottom: 10px;
+    right: 10px;
+    left: auto;
+}
+
+/* Increase navbar height and add logo */
+.navbar {
+    height: 100px;
+    /* Increased navbar height to accommodate padding */
+}
+
+.navbar-brand {
+    padding: 10px;
+    /* Add 10px padding around the logo */
+}
+
+.navbar-brand img {
+    height: 80px;
+    /* Set logo height */
+    /* width: auto; */
+    /* Maintain aspect ratio */
+}
+
+
+
+div .mainlogo {
+    background-image: url(images/NAME_ICON_FULL_500x150.png);
+    background-repeat: no-repeat;
+    height: 80px;
+    margin: 3px;
+}
+
+.panel-group {
+    margin-top: 2.5em;
+}
+
+/* change panel shadows below*/
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, .50);
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.50);
+    margin: 10px;
+}
+
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.50);
+}
+
+/* .ol-zoom {
+    top: 2.0em;
+    left:0.5em;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.50);
+} */
+
+/* xxxxxxxxxxxxxxxx*/
+
+.navbar {
+    position: relative;
+    min-height: 5.5em;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+}
+
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.50);
+}
+
+.navbar-collapse {
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow-x: visible;
+    -webkit-overflow-scrolling: touch;
+    border-top: 1px solid transparent;
+    background-color: white;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+}
+
+.form-control {
+    text-align: end;
+    
+}
+
+.navbar-form{
+    text-align: end;
+    
+}
+/* Tab styling */
+.tab {
+    display: flex;
+    /* border-bottom: 1px solid var(--primary-color); */
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.tab button {
+    flex: 1;
+    background-color: var(--card-bg);
+    /* border: 1px solid var(--primary-color); */
+    border: 1px solid #ddd;
+    border-bottom: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-family: var(--font-primary);
+    font-size: 14px;
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab button:hover {
+    /* background-color: var(--primary-color); */
+    background-color:#bfe5fb;
+    color: white;
+    border: 1px solid #203f5e77;
+    
+}
+
+.tab button.active {
+    /* background-color: var(--primary-color); */
+    background-color:#bfe5fb;
+    /* color: white; */
+    color: var(--text-color);
+    font-weight: 200;
+    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.40);
+}
+
+.tabcontent {
+    /* display: none;
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-top: none;
+    background-color: var(--card-bg); */
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.tabcontent.active {
+    display: block;
+}
+
+.legend-header2 {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.legendtext {
+    font-size: 14px;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.legendtextbold {
+    font-weight: bold;
+}
+
+.divtextalignleft {
+    text-align: left;
+}
+
+/* Centered Title in Header */
+.navbar-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-primary);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--text-color);
+    white-space: nowrap;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+
+
+}
+
+.navbar-title {
+    margin-top: 20px;
+    /* Adjust as needed to vertically center */
+    letter-spacing: 0.5px;
+    font-size: 3vh;
+}
+
+/* Responsive Behavior: Hide on smaller screens */
+@media (max-width: 768px) {
+    .navbar-title {
+        display: none;
+    }
+}
+
+.radio input[type=radio], .radio-inline input[type=radio], .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox] {
+    position: absolute;
+    margin-top: 4px \9;
+    margin-left: -10px;
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    background: white;
+    color: var(--text-color);
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.50);
+    border-radius: 4px;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4px 4px 0 0;
+    border: none;
+    text-align: center;
+    width: 18px;
+    height: 14px;
+    font: 16px/14px Tahoma, Verdana, sans-serif;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    background: #46911200;
+    
+}
+
+.leaflet-popup-content {
+    margin: 13px 19px;
+    line-height: 1.4;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    /* margin-bottom: -1px; */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.40);
+}
+
+.info-panel {
+    position: fixed;
+    top: 0;
+    right: -400px; /* Hide the panel off-screen by default */
+    width: 400px;
+    height: calc(100vh - 2.0em);
+    background: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000; /* Ensure it appears above the map */
+}
+
+.pane-row {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    /* border-bottom: 1px solid #e0e0e0; */
+    margin-right: -15px;
+    margin-left: -15px;
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-between; /* Space out caption and value columns */
+    align-items: center; /* Vertically align items in the center */
+    border-bottom: 1px solid #e0e0e0; /* Optional: Add a border between rows */
+    padding: 5px 0; /* Add some padding for spacing */
+}
+
+.info-pane {
+    padding: 15px;
+    margin: 15px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: calc(100% - 2.0em); /* Constrain height to viewport minus header */
+    border: 1px solid #e0e0e0; /* Optional: Add a border for better visibility */
+    background: white; /* Optional: Set a background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.row .caption-column {
+    font-weight: 700;
+    color: #4a4a4a;
+    text-align: left;
+    align-self: center;
+    padding: 5px;
+    margin: 5px;
+    flex: 1; /* Allow caption column to grow and take available space */
+}
+
+.value-column {
+    color: #3D647D;
+    text-align: right;
+    align-self: left;
+    line-height: 2.3em;
+    padding: 5px;
+    margin: 5px;
+    flex: 2; /* Allow value column to take more space than caption */
+}
+
+.right-panel-title{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #4a4a4a;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.infopanel-group {
+    margin-top: 2.5em; /* Small gap from the bottom */
+    margin-bottom: 2.5em; /* Small gap from the bottom */
+    top: 3.5em;
+    bottom: 3.5em;
+    position: fixed; /* Fix the panel group in the viewport */
+    bottom: 0; /* Position at the bottom of the viewport */
+    left: 0; /* Align to the left edge */
+    right: 0; /* Align to the right edge */
+    background: white; /* Optional: Set a background color */
+    padding: 15px; /* Add padding for spacing */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+@media (min-width: 992px) {
+    .col-md-3 {
+        width: 25%;
+    }
+}
+
+/* Ensure the parent containers have defined heights */
+.panel-collapse.in {
+     max-height: calc(70vh); /* Fill the height of the parent */
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-body {
+    flex: 1; /* Allow the panel body to grow and fill available space */
+    overflow: hidden; /* Prevent scrolling in the parent */
+}
+
+/* Style for the #infopane */
+#infopane.panel-body.info-pane {
+    height: 100%; /* Fill the height of the parent */
+    overflow-y: auto; /* Enable vertical scrolling ONLY in #infopane */
+    padding: 15px; /* Optional: Add padding inside the pane */
+    margin: 0; /* Remove margin to fit perfectly within the parent */
+    border: 1px solid #e0e0e0; /* Optional: Add a border for better visibility */
+    background: white; /* Optional: Set a background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    box-sizing: border-box; /* Include padding and border in the height calculation */
+}
+
+
+/*----------------pages-----------------*/
+
+/* Navbar Offset */
+.navbar-offset {
+    margin-top: 110px; /* Navbar height (100px) + 10px gap */
+}
+
+/*page 1*/
+
+/* Center Panel */
+.center-panel {
+    position: absolute;
+    top: 110px; /* Navbar height (100px) + 10px gap */
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    width: 80%; /* 80% of the viewport width */
+    background: white; /* Card background */
+    border: 1px solid #e0e0e0; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.40); /* Box shadow */
+    padding: 20px;
+    /* font-family: 'Roboto Condensed', 'Inter', 'Poppins', sans-serif; */ /* Font */
+    color: #617592; /* Text color */
+}
+
+/* Responsive Behavior for Smaller Screens */
+@media (max-width: 768px) {
+
+    
+    body {
+        padding-top: 150px; /* Adjust based on collapsed navbar height */
+    }
+    
+    .center-panel {
+        /* top: 10%; */
+        left: 5%;
+        right: 5%;
+        bottom: 10%;
+        width:90%
+    }
+
+}
+
+/*page 2*/
+
+/* Left Panel */
+.left-panel {
+    position: absolute;
+    top: 110px; /* Navbar height (100px) + 10px gap */
+    left: 10%;
+    bottom: 10%;
+    width: calc(60% - 5px); /* 2 times the size of the right panel */
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.40);
+    padding: 20px;
+    /*  font-family: 'Roboto Condensed', 'Inter', 'Poppins', sans-serif;*/ /* Font */
+    color: #617592; /* Text color */
+}
+
+/* Right Panel */
+.right-panel {
+    position: absolute;
+    top: 110px; /* Navbar height (100px) + 10px gap */
+    right: 10%;
+    bottom: 10%;
+    width: calc(20% - 5px); /* Half the size of the left panel */
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.40);
+    padding: 20px;
+    /* font-family: 'Roboto Condensed', 'Inter', 'Poppins', sans-serif; */ /* Font */
+    color: #617592; /* Text color */
+}
+
+/* Responsive Behavior for Smaller Screens */
+@media (max-width: 768px) {
+    .left-panel,
+    .right-panel {
+        position: static;
+        width: 90%; /* Full width on smaller screens */
+        margin: 10px auto; /* Center the panels */
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+    }
+
+    .left-panel {
+        margin-bottom: 20px; /* Add spacing between stacked panels */
+    }
+
+    body {
+        padding-top: 150px; /* Adjust based on collapsed navbar height */
+    }
+}
+
+/*page 3*/
+
+/* Top Panel */
+.top-panel {
+    position: absolute;
+    top: 110px; /* Navbar height (100px) + 10px gap */
+    left: 10%;
+    right: 10%;
+    height: calc(60% - 5px); /* 2 times the size of the bottom panel */
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.40);
+    padding: 20px;
+    font-family: 'Roboto Condensed', 'Inter', 'Poppins', sans-serif; /* Font */
+    color: #617592; /* Text color */
+}
+
+/* Bottom Panel */
+.bottom-panel {
+    position: absolute;
+    top: calc(110px + 60% + 10px);
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+    height: calc(20% - 5px); /* Half the size of the top panel */
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.40);
+    padding: 20px;
+    font-family: 'Roboto Condensed', 'Inter', 'Poppins', sans-serif; /* Font */
+    color: #617592; /* Text color */
+}
+
+/* Responsive Behavior for Smaller Screens */
+@media (max-width: 768px) {
+    .top-panel,
+    .bottom-panel {
+        position: static;
+        height: auto; /* Auto height on smaller screens */
+        width: 90%; /* Full width on smaller screens */
+        margin: 10px auto; /* Center the panels */
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+    }
+
+    .top-panel {
+        margin-bottom: 20px; /* Add spacing between stacked panels */
+    }
+
+    body {
+        padding-top: 150px; /* Adjust based on collapsed navbar height */
+    }
+}
