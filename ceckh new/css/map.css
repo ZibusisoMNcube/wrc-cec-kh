@@ -48,7 +48,7 @@ body {
 
 .mini-submenu {
     display: none;
-    background-color: rgba(255, 255, 255, 0.46);
+    background-color: #bfe5fb;
     border: 1px solid rgba(0, 0, 0, 0.9);
     border-radius: 4px;
     padding: 9px;
@@ -89,11 +89,13 @@ body {
 }
 
 .slide-submenu {
-    background: rgba(0, 0, 0, 0.45);
+    background: #bfe5fb;
     display: inline-block;
     padding: 0 8px;
     border-radius: 4px;
     cursor: pointer;
+    border: 1px solid #ddd;
+    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.40);
 }
 
 /* Custom CSS to move zoom control to bottom right */
@@ -623,4 +625,25 @@ div .mainlogo {
     body {
         padding-top: 150px; /* Adjust based on collapsed navbar height */
     }
+}
+
+.leaflet-touch .leaflet-bar a {
+    width: 27px;
+    height: 27px;
+    line-height: 27px;
+}
+
+.leaflet-bar a, .leaflet-bar a:hover {
+    background-color: #bfe5fb;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.40);
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.40);
+    border: 1px solid #ddd;
 }
